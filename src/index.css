@@ -1,0 +1,28 @@
+:root {
+  background-color: #100F10;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+}
+
+.background-blur-green {
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+  background-color: rgba(11, 218, 142, 0.30);
+  filter: blur(175px);
+  position: fixed;
+  top: 20%;
+}

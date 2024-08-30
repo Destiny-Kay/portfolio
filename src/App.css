@@ -1,0 +1,139 @@
+#root {
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 1rem; */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.greeter-div {
+  display: flex;
+  justify-content: center;
+}
+
+.gravitas {
+  font-family: "Gravitas One";
+}
+
+.hero-section {
+  min-height: 100vh;
+  /* margin: 0 1rem; */
+}
+
+.greeter {
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.30);
+  color: #ffffff00;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 2rem;
+}
+
+.hero-text {
+  font-size: 64px;
+  font-weight: 400px;
+  line-height: normal;
+  margin-top: 10rem;
+  margin-bottom: 0;
+}
+
+.gideon-roman {
+  font-family: "Gideon Roman";
+  font-size: 24px;
+}
+
+.header {
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #FFF;
+  color: #FFFFFF00;
+  font-size: 128px;
+}
+
+.width-740 {
+  max-width: 740px;
+}
+
+.mt-4 {
+  margin-top: 8rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  width: 98vw;
+  gap: 1rem;
+}
+
+.button-group button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-filled {
+  background-color: #EEFAF5;
+  color: #000;
+  border: none;
+  width: 170px;
+  height: 45px;
+  font-family: "Gideon Roman";
+  font-size: 24px;
+  border-radius: 10px;
+}
+
+.button-outlined {
+  background-color: #FFFFFF00;
+  border: 1px solid #fff;
+  color: #fff;
+  min-width: 170px;
+  height: 45px;
+  border-radius: 10px;
+  font-family: "Gideon Roman";
+  font-size: 24px;
+  padding: 0 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.socials {
+  margin-top: 4rem;
+}
+
+.about-cont {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  text-align: left;
+  margin: 0 1rem;
+}
+
+#work {
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .greeter {
+    font-size: 64px;
+  }
+
+  .header {
+    -webkit-text-stroke-width: 2px;
+    font-size: 48px;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-cont img {
+    display: none;
+  }
+}
