@@ -10,7 +10,11 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />
   }
-])
+  ],
+  {
+    basename:'/portfolio/'
+  }
+)
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
