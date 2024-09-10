@@ -157,6 +157,7 @@
 }
 
 .project-more-info {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -164,6 +165,22 @@
   color: #477bd0;
   z-index: 20;
   margin: 1rem 0 2rem 0;
+}
+
+.header-small {
+  margin-top: 10rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FFF;
+  color: #FFFFFF00;
+  font-size: 3rem;
+}
+
+.contact-footer {
+  margin-bottom: 4rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  font-size: 2.5rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -183,5 +200,9 @@
 
   .about-cont img {
     display: none;
+  }
+
+  .header-small{
+    font-size: 2rem;
   }
 }

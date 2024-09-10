@@ -13,8 +13,10 @@ import '/veri-doctor-landing.png'
 import '/magic-mailer.png'
 import Footer from './components/Footer'
 import { TbWorldWww } from "react-icons/tb";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from 'react-icons/fa6'
+// import { MdEmail } from 'react-icons/md' 
 
 
 function App() {
@@ -23,6 +25,9 @@ function App() {
   const workRef = useRef(null)
   const contactRef = useRef(null)
 
+  const handleOpenTab = (url) => {
+    window.open(url)
+  }
   return (
   <>
     <div className='center-div'>
@@ -87,23 +92,22 @@ function App() {
           </p>
           <div className='project-more-info'>
             <TbWorldWww className='cursor-pointer' onClick={() => {window.open('https://www.veridoctor.com')}}/>
-            <FaGithub />
           </div>
         </div>
         <img src='veri-doctor-landing.png' className='project-image'></img>
-      </div>
+      </div>https://x.com/Destinykevogo
 
       <div className='projects-grid'>
         <div className=''>
-          <p className='project-title gravitas'>Magic Mailer.</p>
+          <p className='project-title gravitas'>Mail Magic.</p>
           <p className='project-role'>Role: Full stack software developer</p>
           <p className='project-description'>
             Automates mass email sending process. Provides users with a way to manage their contacts and email groups. Allows mass emails to be sent with 
             just one click
           </p>
           <div className='project-more-info'>
-            <FaYoutube />
-            <FaGithub />
+            <FaYoutube className='cursor-pointer' onClick={() => window.open('https://www.youtube.com/watch?v=IG0L_bJN9AE')}/>
+            <FaGithub className='cursor-pointer' onClick={() => window.open('https://github.com/Destiny-Kay/MailMagic')}/>
           </div>
         </div>
         <img src='magic-mailer.png' className='project-image col-start-1'></img>
@@ -111,9 +115,16 @@ function App() {
 
     </section>
 
-    {/* <section id='contact'>
-      <h1 className='gravitas header'>Get in touch</h1>
-    </section> */}
+    <section id='contact'>
+      <h1 className='gravitas header-small'>Get in touch</h1>
+    </section>
+    <div className='contact-footer'>
+      <FaGithub className='cursor-pointer z-10' onClick={() => handleOpenTab('https://github.com/Destiny-Kay')}/>
+      {/* <MdEmail className='cursor-pointer z-10' /> */}
+      <FaWhatsapp className='cursor-pointer z-10' onClick={() => handleOpenTab('https://wa.me/+254706917928')}/>
+      <FaXTwitter className='cursor-pointer z-10' onClick={() => handleOpenTab('https://x.com/Destinykevogo')}/>
+      <FaLinkedin className='cursor-pointer z-10' onClick={() => handleOpenTab('https://www.linkedin.com/in/destinykevogo/')}/>
+    </div>
     <Footer/>
   </>
   )
